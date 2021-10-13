@@ -18,3 +18,9 @@ html.dark {
     @apply bg-gray-800 rounded-md !important;
   }
 }
+
+.slidev-layout {
+  &.section {
+    @apply pr-17rem;
+  }
+}
