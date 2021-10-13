@@ -5,6 +5,8 @@ fonts:
   mono: 'JetBrains Mono'
 
 highlighter: shiki
+drawings:
+  enabled: false
 # show line numbers in code blocks
 lineNumbers: true
 # some information about the slides, markdown enabled
@@ -108,11 +110,14 @@ Vite et plugins,
 ---
 layout: section
 ---
+
 # Améliorer son expérience développeur avec TypeScript
+
 <!--
 Comprendre TypeScript et son intérêt,
 Intégrer TypeScript dans Vue 3,
 -->
+
 ---
 layout: section
 ---
