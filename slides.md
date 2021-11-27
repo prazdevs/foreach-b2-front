@@ -42,6 +42,37 @@ Data et directives,
 Methods, Computeds et Watchers,
 -->
 ---
+layout: default
+---
+# L'instance Vue
+
+<iframe height="400" style="width: 100%;" scrolling="no" title="Vue JS instance" src="https://codepen.io/prazdevs/embed/zYdPvXz?default-tab=html%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/prazdevs/pen/zYdPvXz">
+  Vue JS instance</a> by PraZ (<a href="https://codepen.io/prazdevs">@prazdevs</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+---
+layout: default
+---
+# L'instance Vue (complète)
+
+<iframe height="400" style="width: 100%;" scrolling="no" title="Vue JS Instance (complète)" src="https://codepen.io/prazdevs/embed/PoJYNLa?default-tab=html%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/prazdevs/pen/PoJYNLa">
+  Vue JS basics</a> by PraZ (<a href="https://codepen.io/prazdevs">@prazdevs</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+---
+layout: big-points
+---
+
+En résumé, l'instance Vue:
+- contrôle du HTML à partir d'un objet JavaScript.
+- expose des données et méthodes au HTML.
+- permet d'observer et de réagir à des actions.
+
+---
 layout: section
 ---
 # Créer une application avec les SFCs et l'Options API
