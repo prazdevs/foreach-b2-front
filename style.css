@@ -9,13 +9,13 @@
 
 html:not(.dark) {
   :not(pre) > code {
-    @apply bg-gray-200 rounded-md !important;
+    @apply bg-gray-200 rounded-md p-1 !important;
   }
 }
 
 html.dark {
   :not(pre) > code {
-    @apply bg-gray-800 rounded-md !important;
+    @apply bg-gray-800 rounded-md p-1 !important;
   }
 }
 
