@@ -16,5 +16,8 @@
     "@slidev/types": "^0.26.1",
     "@types/node": "^16.10.8",
     "typescript": "^4.4.4"
+  },
+  "volta": {
+    "node": "16.13.0"
   }
 }
