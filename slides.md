@@ -11,10 +11,10 @@ drawings:
 lineNumbers: true
 # some information about the slides, markdown enabled
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
+  ## ForEach Academy - B2 Frontend
+  Slides du module FrontEnd et VueJs.
 
-  Learn more at [Sli.dev](https://sli.dev)
+  Plus d'infos sur [foreach-academy.fr](https://www.foreach-academy.fr/formation-bachelor-developpement-web).
 ---
 # Frontend et Vue.js
 <!--
@@ -25,12 +25,53 @@ layout: section
 ---
 # Comprendre l'écosystème frontend et JavaScript
 <!--
-Histoire du webdev,
 single page apps,
 architecture en composants,
 outillage Javascript (bundlers, linters, frameworks...),
 IDEs, DevTools, CLIs,
 -->
+---
+layout: full
+---
+# Ecosystème Frontend (1995-2020)
+
+<img src="/images/timeline.png" alt="Timeline des frameworks et langages" />
+<div style="font-style: italic; text-align: center;">
+  source: <a href="https://twitter.com/manz" target="_blank">twitter.com/manz</a>
+</div>
+
+<!--
+- 2008: V8 JavaScript engine par Google
+- 2009: NodeJS
+- 2010: AngularJS
+- 2013: ReactJS
+- 2014: VueJS
+-->
+---
+layout: full
+---
+# Bundler (Webpack, Rollup, Parcel...)
+
+<img src="/images/bundler.png" alt="Schéma fonctionnel d'un bundler" />
+<div style="font-style: italic; text-align: center;">
+  source: <a href="https://webpack.js.org/" target="_blank">webpack.js.org</a>
+</div>
+
+<!--
+- Entry: module depuis le quel résoudre le graphe de dépendances
+- Output: bundle dénéré
+- Loader: permet d'interprêter et convertir autre chose que JS/JSON en module.
+- Plugin: effectuer des tâches (optimisation, injection...).
+- Compatibility: générer un bundle ES5-compliant (IE11+).
+-->
+---
+layout: big-points
+---
+# Vos nouveaux meilleurs amis
+
+- <logos-mdn /> [MDN WebDocs JS](https://developer.mozilla.org/fr)
+- <logos-vue /> [VueJS Docs](https://vuejs.org/)
+
 ---
 layout: section
 ---
@@ -46,7 +87,7 @@ layout: default
 ---
 # L'instance Vue
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Vue JS instance" src="https://codepen.io/prazdevs/embed/zYdPvXz?default-tab=html%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="Vue JS instance" src="https://codepen.io/prazdevs/embed/zYdPvXz?default-tab=html%2Cresult&editable=true&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/prazdevs/pen/zYdPvXz">
   Vue JS instance</a> by PraZ (<a href="https://codepen.io/prazdevs">@prazdevs</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -57,11 +98,21 @@ layout: default
 ---
 # L'instance Vue (complète)
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Vue JS Instance (complète)" src="https://codepen.io/prazdevs/embed/PoJYNLa?default-tab=html%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="Vue JS Instance (complète)" src="https://codepen.io/prazdevs/embed/PoJYNLa?default-tab=html%2Cresult&editable=true&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/prazdevs/pen/PoJYNLa">
   Vue JS basics</a> by PraZ (<a href="https://codepen.io/prazdevs">@prazdevs</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
+
+---
+layout: full
+---
+# Pattern Model-View-ViewModel (MVVM)
+
+<img style="height: 400px; margin:auto;" src="/images/mvvm.png" />
+<div style="font-style: italic; text-align: center;">
+  source: <a href="https://vuejs.org" target="_blank">vuejs.org</a>
+</div>
 
 ---
 layout: big-points
@@ -72,6 +123,21 @@ En résumé, l'instance Vue:
 - expose des données et méthodes au HTML.
 - permet d'observer et de réagir à des actions.
 
+---
+layout: full
+---
+# Architecture en composants
+
+<img style="height: 400px; margin:auto;" src="/images/component-architecture.png" />
+<div style="font-style: italic; text-align: center;">
+  source: <a href="https://vuejs.org" target="_blank">vuejs.org</a>
+</div>
+
+<!--
+- Blocs de code réutilisable
+- One-way data flow
+- Props down / events up
+-->
 ---
 layout: section
 ---

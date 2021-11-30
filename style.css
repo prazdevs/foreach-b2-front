@@ -23,4 +23,10 @@ html.dark {
   &.section {
     @apply pr-17rem;
   }
+
+  &.big-points {
+    h1 {
+      color: red
+    }
+  }
 }
