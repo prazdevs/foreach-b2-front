@@ -29,4 +29,10 @@ html.dark {
       color: red
     }
   }
+
+  &.two-columns {
+    .col-left, col-right {
+      /* margin:auto; */
+    }
+  }
 }

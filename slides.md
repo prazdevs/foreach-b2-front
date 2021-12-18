@@ -25,13 +25,11 @@ layout: section
 ---
 # Comprendre l'écosystème frontend et JavaScript
 <!--
-single page apps,
-architecture en composants,
 outillage Javascript (bundlers, linters, frameworks...),
 IDEs, DevTools, CLIs,
 -->
 ---
-layout: full
+layout: default
 ---
 # Ecosystème Frontend (1995-2020)
 
@@ -48,7 +46,42 @@ layout: full
 - 2014: VueJS
 -->
 ---
-layout: full
+layout: two-cols
+---
+# Pourquoi un framework ?
+
+```html
+<input class="name" value="" />
+<p class="result"></p>
+```
+
+```js
+const input = document.querySelector('.name')
+const result = document.querySelector('.result')
+
+input.addEventListener('change', (event) => {
+  const newValue = event.target.value;
+  result.textContent += newValue;
+})
+```
+
+::right::
+
+```html
+<input class="name" v-model="result" />
+<p> {{ result }} </p>
+```
+
+```js
+data() {
+  return {
+    result: '',
+  }
+}
+```
+
+---
+layout: default
 ---
 # Bundler (Webpack, Rollup, Parcel...)
 
@@ -65,13 +98,25 @@ layout: full
 - Compatibility: générer un bundle ES5-compliant (IE11+).
 -->
 ---
-layout: big-points
+layout: two-cols
 ---
-# Vos nouveaux meilleurs amis
+##  Vos nouveaux meilleurs amis
 
 - <logos-mdn /> [MDN WebDocs JS](https://developer.mozilla.org/fr)
 - <logos-vue /> [VueJS Docs](https://vuejs.org/)
+- <logos-github-icon/> [VueJS GitHub](https://github.com/vuejs/vue)
+- <logos-discord-icon /> [VueLand Discord](https://chat.vuejs.org/)
 
+::right::
+ 
+<img style="height: 450px; margin: auto;" src="/images/docs-meme.png" alt="Meme 'read the docs' avec Phoebe et Joey" />
+
+<!--
+- Favoriser les documentations officielles
+- Consulter les repos et issues des projets
+- Rejoindre les communautés et canaux de discussion
+- Eviter de recourir à Stack Overflow et autres
+-->
 ---
 layout: section
 ---
@@ -93,6 +138,13 @@ layout: default
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
+<!--
+- Data
+- Event
+- Computed
+- Methods
+- Watcher
+-->
 ---
 layout: default
 ---
@@ -104,8 +156,11 @@ layout: default
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
+<!--
+Exemple complet dispo sur les slides
+-->
 ---
-layout: full
+layout: default
 ---
 # Pattern Model-View-ViewModel (MVVM)
 
@@ -118,13 +173,13 @@ layout: full
 layout: big-points
 ---
 
-En résumé, l'instance Vue:
+# En résumé, l'instance Vue:
 - contrôle du HTML à partir d'un objet JavaScript.
 - expose des données et méthodes au HTML.
 - permet d'observer et de réagir à des actions.
 
 ---
-layout: full
+layout: default
 ---
 # Architecture en composants
 
@@ -143,13 +198,97 @@ layout: section
 ---
 # Créer une application avec les SFCs et l'Options API
 <!--
-Vue-CLI,
-Single File Components,
 Components et Slots,
 Props et Events,
 Mixins et Provide/Inject,
 Cycle de vie d'un composant,
 Data fetching,
+-->
+---
+layout: default
+---
+# Vue-CLI
+
+Vue-cli est un ensemble d'outils officiel fourni par Vue.  
+C'est le standard dans la plupart des projets Vue 2.
+
+- Création de projet interactive.
+- Wrapper webpack préconfiguré et extensible (`vue-cli-service`).
+- Installation de plugins et outils (`ESLint`, `VueX`...).
+- GUI de gestion des apps et plugins.
+
+Installer avec : `volta install @vue/cli`
+
+Créer une application avec: `vue create <app-name>`
+
+Lancer la GUI avec `vue ui`
+
+
+<ri-arrow-right-circle-line /> [et la documentation est ici](https://cli.vuejs.org/)
+
+---
+layout: two-cols
+---
+# Single File Components
+
+```html
+<!-- index.html -->
+<div id="app">
+  <input v-model="searchInput" />
+</div>
+```
+```js
+// index.js
+new Vue({
+  el: '#app',
+  data: {
+    searchInput: '',
+  },
+});
+```
+```css
+/* index.css */
+input {
+  color: red;
+}
+```
+
+::right::
+
+<v-click>
+
+```vue
+<!-- App.vue -->
+<template>
+  <div>
+    <input v-model="searchInput" />
+  </div>
+</template>
+
+<script>
+  export default {
+    name: 'App',
+    data() {
+      return {
+        searchInput: '',
+      }
+    },
+  }
+</script>
+
+<style scoped>
+  input {
+    color: red;
+  }
+</style>
+```
+
+</v-click>
+
+<!-- 
+- Réutilisable
+- `data()` doit être une fonction
+- Pas de `el`, seule la racine est montée dans le DOM, Vue résoud le reste
 -->
 ---
 layout: section
