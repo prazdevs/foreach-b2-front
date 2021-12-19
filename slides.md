@@ -46,9 +46,10 @@ layout: default
 - 2014: VueJS
 -->
 ---
-layout: two-cols
+layout: default
+cols: '1-1'
 ---
-# Pourquoi un framework ?
+# Native JS
 
 ```html
 <input class="name" value="" />
@@ -66,6 +67,8 @@ input.addEventListener('change', (event) => {
 ```
 
 ::right::
+
+# VueJs
 
 ```html
 <input class="name" v-model="result" />
@@ -106,6 +109,20 @@ layout: two-cols
 - <logos-vue /> [VueJS Docs](https://vuejs.org/)
 - <logos-github-icon/> [VueJS GitHub](https://github.com/vuejs/vue)
 - <logos-discord-icon /> [VueLand Discord](https://chat.vuejs.org/)
+
+##
+## Vos nouveaux outils favoris
+
+- <logos-visual-studio-code /> [Visual Studio Code](https://code.visualstudio.com/)
+- <logos-vue /> [Vue DevTools](https://devtools.vuejs.org/)
+- <logos-terminal /> [Votre terminal](https://ohmyz.sh/)
+
+## 
+____
+
+## 
+> A vous de créer votre DX (Developer Experience), et de faire de votre environnement de travail votre meilleur allié.
+
 
 ::right::
  
