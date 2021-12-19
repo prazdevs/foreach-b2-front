@@ -83,6 +83,11 @@ data() {
 }
 ```
 
+<!--
+- Avoir un code plus déclaratif et lisible
+- Enrichir son code (plugins)
+- Optimiser et bénéficier d'un écosystème
+-->
 ---
 layout: default
 ---
